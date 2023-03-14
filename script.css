@@ -1,0 +1,14 @@
+p {
+font-family: 'Roboto', sans-serif; 
+}
+
+#main {
+    font-family: 'Roboto', sans-serif;
+}
+
+#instructions{
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 25px;
+}

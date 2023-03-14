@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fa2script.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="script.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+</head>
+<body>
+
+<p id="instructions">
+    This calculator is intended for two numbers only.<br>
+    The buttons on the calculator represent their respective functions:<br>
+    + for addition,<br>
+    - for subtraction,<br>
+    * for multiplication,<br>
+    / for division,<br>
+    % for the remainder of the quotient,<br>
+    Do mind that the left box is for the augend/addend, minuend, multiplicand and the dividend.<br>
+    Once one of the buttons are clicked, it outputs automatically.
+</p>
+
+<div class="main">
+    <form>
+        <div>
+            <input type="number" id="InputX">
+            <input type="number" id="InputY">
+        </div>
+        <div id="operator">
+            <button type="button" onclick="displayOutput(calculator('add'))">+</button>
+            <button type="button" onclick="displayOutput(calculator('subtract'))">-</button>
+            <button type="button" onclick="displayOutput(calculator('multiply'))">*</button>
+            <button type="button" onclick="displayOutput(calculator('divide'))">/</button>
+            <button type="button" onclick="displayOutput(calculator('remainder'))">%</button>
+        </div>
+    </form>
+</div>
+
+<p id="output">Results will be displayed here</p>
+
+</body>
+</html>
